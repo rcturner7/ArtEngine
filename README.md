@@ -12,5 +12,5 @@ Art Engine application to randomly create images from layers created in an image
 Alternative-Dimensions has an upcoming launch SolCitizens on the Solana Network. The webpage (still in development) www.solcitizens.club. Come check it out, and our social media:
 Twitter:https://twitter.com/RyanTur01899210
 Discord:https://discord.gg/dMhw4uus
-Youtube: https://www.youtube.com/user/rcturne![new improved trurtle design_edited](https://user-images.githubusercontent.com/98337469/153071467-0fb565c1-c64a-4307-9a0b-da2d573bcd08.jpg)
+Youtube: https://www.youtube.com/user/rcturne
 
