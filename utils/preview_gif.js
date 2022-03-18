@@ -7,7 +7,7 @@ const { format, preview_gif } = require(`${basePath}/src/config.js`);
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
 
-const GoofiesGiffer = require(`${basePath}/modules/AlternativeDimensionsGiffer.js`);
+const AlternativeDimensionsGiffer = require(`${basePath}/modules/AlternativeDimensionsGiffer.js`);
 let AlternativeDimensionsGiffer = null;
 
 const loadImg = async (_img) => {
@@ -81,10 +81,10 @@ const saveProjectPreviewGIF = async (_data) => {
           previewCanvasWidth,
           previewCanvasHeight
         );
-        hashlipsGiffer.add();
+        AlternativeDimensionsGiffer.add();
       });
     });
-    hashlipsGiffer.stop();
+    AlternativeDimensionsGiffer.stop();
   }
 };
 
