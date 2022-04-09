@@ -8,7 +8,7 @@ const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
 
 const AlternativeDimensionsGiffer = require(`${basePath}/modules/AlternativeDimensionsGiffer.js`);
-let AlternativeDimensionsGiffer = null;
+let alternativeDimensionsGiffer = null;
 
 const loadImg = async (_img) => {
   return new Promise(async (resolve) => {
@@ -46,7 +46,7 @@ const saveProjectPreviewGIF = async (_data) => {
 
     ctx.clearRect(0, 0, width, height);
 
-    AlternativeDimensionsGiffer = new AlternativeDimensionsGiffer(
+    alternativeDimensionsGiffer = new AlternativeDimensionsGiffer(
       canvas,
       ctx,
       `${previewPath}`,
@@ -54,7 +54,7 @@ const saveProjectPreviewGIF = async (_data) => {
       quality,
       delay
     );
-    AlternativeDimensionsGiffer.start();
+    alternativeDimensionsGiffer.start();
 
     await Promise.all(_data).then((renderObjectArray) => {
       // Determin the order of the Images before creating the gif
@@ -81,10 +81,10 @@ const saveProjectPreviewGIF = async (_data) => {
           previewCanvasWidth,
           previewCanvasHeight
         );
-        AlternativeDimensionsGiffer.add();
+        alternativeDimensionsGiffer.add();
       });
     });
-    AlternativeDimensionsGiffer.stop();
+    alternativeDimensionsGiffer.stop();
   }
 };
 
